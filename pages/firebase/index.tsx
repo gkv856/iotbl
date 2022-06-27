@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import useFireBaseAuth from "../firebase_tutorial/firebase/useAuth";
+import useFireBaseAuth from "../../firebase_tutorial/firebase/useAuth";
 
 const IndexPage = () => {
     const { user, loading } = useFireBaseAuth();
