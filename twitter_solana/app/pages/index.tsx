@@ -1,4 +1,25 @@
+import useWalletHook from "../libs/useWalletHook";
+
 const IndexPage = () => {
+  // const { program } = useWalletHook();
+  // console.log(program.programId.toBase58());
+
+  // const fetchTweets = async () => {
+
+  //   if (program) {
+  //     const tweets = await program.account.tweetOnSolana.all();
+  //     return tweets;
+  //   }
+  // };
+
+  // fetchTweets()
+  //   .then((t) => {
+  //     console.log(t);
+  //   })
+  //   .catch((e) => {
+  //     console.log(e);
+  //   });
+
   const tweets = ["t1", "t2"];
   return (
     <>
