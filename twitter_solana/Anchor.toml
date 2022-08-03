@@ -1,14 +1,14 @@
 [features]
 seeds = false
 skip-lint = false
-[programs.localnet]
+[programs.devnet]
 sol_twitter = "ECj8sRDTpoGS7o71Tu9QC24sRsMWeqkzeJpxWozSbWxP"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/gkvkrypto/.config/solana/id.json"
 
 [scripts]
