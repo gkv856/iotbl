@@ -27,7 +27,6 @@ export const useWalletHook = async () => {
   // // console.log(tweets);
 
   const tweets = await connection.getProgramAccounts(programID);
-  idl.name;
 
   tweets.forEach((tweet, idx) => {
     console.log(tweet.account.data.toString());
