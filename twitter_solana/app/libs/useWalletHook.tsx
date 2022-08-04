@@ -42,7 +42,7 @@ export const useWalletHook = (): {
   const anchorWalletObj = useAnchorWallet();
 
   // provider is required by the program, that will parse everyting for us from blockchain to normal data structure
-  const provider = new AnchorProvider(connection, adapterWalletObj, opts);
+  const provider = new AnchorProvider(connection, adapterWalletObj, {});
   const program = new Program(idl, programID, provider);
 
   // we return everything from here, so that whoever calls this hook, gets all this data

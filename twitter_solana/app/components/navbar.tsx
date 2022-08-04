@@ -1,22 +1,8 @@
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import useWalletHook from "../libs/useWalletHook";
-const NavBar = () => {
-  const { connection, adapterWalletObj, anchorWalletObj } = useWalletHook();
 
-  const router = useRouter();
-
-  const [loggedIn, setLoggedIn] = useState(false);
-  useEffect(() => {
-    if (anchorWalletObj?.publicKey) {
-      setLoggedIn(true);
-    } else {
-      setLoggedIn(false);
-      router.push("/");
-    }
-  }, [anchorWalletObj]);
+const NavBar = (props: any) => {
+  const loggedIn = props.loggedIn || false;
 
   return (
     <>
